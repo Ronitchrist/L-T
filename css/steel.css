@@ -1,0 +1,171 @@
+/* === General Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff8f0; /* light warm background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === Header === */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d35400; /* warm orange */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.welcome-text {
+    color: #d35400; /* warm orange */
+}
+
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* === Hero Section === */
+.hero {
+    background: url('../images/food/hero.jpg') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* === Menu Section === */
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h3 {
+    font-size: 28px;
+    color: #d35400;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.menu-text {
+    padding: 15px;
+    flex: 1;
+}
+
+.menu-text h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.menu-text p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 8px;
+}
+
+.menu-text span {
+    font-weight: bold;
+    color: #27ae60;
+    font-size: 16px;
+}
+
+.menu-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Thoda bada hoga */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow enhance hoga */
+}
+
+
+/* === About Section === */
+#about {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffe5d0;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#about img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#about p {
+    max-width: 600px;
+}
+
+/* === Contact Section === */
+#contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+#contact i {
+    margin-right: 0.5rem;
+    color: #d35400;
+}
+
+/* === Footer === */
+footer {
+    background: #d35400;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: white;
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+}
